@@ -23,11 +23,11 @@ namespace ConsoleApp1
 
         public static List<string> icecekler = new List<string> { "Kola", "Ayran", "Su" };
         public static List<double> icecekFiyatlari = new List<double> { 50, 35, 20 };
-        // 5 adet masa durumu ve hesap takibi
+        
         public static bool[] masaDoluMu = new bool[5];
         public static double[] masaHesaplari = new double[5];
 
-        // Günlük toplam ciro (Z Raporu)
+        // toplam para
         public static double zRaporuToplam = 0;
     }
 }
