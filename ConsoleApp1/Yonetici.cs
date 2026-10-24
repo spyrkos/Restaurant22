@@ -11,8 +11,8 @@ namespace ConsoleApp1
             Console.Clear();
             Console.WriteLine("--- YÖNETİCİ PANELİ ---");
             Console.WriteLine("1 - Z Raporunu Sıfırla");
-            Console.WriteLine("2 - Tüm Masaları Boşalt");
-            Console.WriteLine("3 - Geri Dön");
+            
+            Console.WriteLine("2 - Geri Dön");
             Console.Write("Seçiminiz: ");
 
             string yoneticiSecim = Console.ReadLine();
@@ -22,15 +22,8 @@ namespace ConsoleApp1
                     Yemekler.zRaporuToplam = 0;
                     Console.WriteLine("Z Raporu sıfırlandı.");
                     break;
+  
                 case "2":
-                    for (int i = 0; i < Yemekler.masaDoluMu.Length; i++)
-                    {
-                        Yemekler.masaDoluMu[i] = false;
-                        Yemekler.masaHesaplari[i] = 0;
-                    }
-                    Console.WriteLine("Tüm masalar sıfırlandı ve boşaltıldı.");
-                    break;
-                case "3":
                     return;
                 default:
                     Console.WriteLine("Geçersiz işlem.");
